@@ -2,30 +2,238 @@
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
+  max-width: 1440px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+position: relative;
 }
 
-.header {
+/* .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+} */
+
+/* HEADER */
+
+.header {
+  padding-top: 60px;
+  padding-bottom: 58px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  
+}
+
+.header__image{
+  display: block;
+  margin: 0 auto 52px;
+}
+
+.header__navigation_links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__navigation_link{
+position: relative;
+text-decoration: none;
+display: block;
+box-sizing: border-box;
+padding-bottom: 14px;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+text-transform: uppercase;
+color: #FFFFFF;
+transition: font-size 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__navigation_link:hover,
+.header__navigation_link:focus{
+  font-size: 14px;
+}
+
+.header__navigation_link_active_true::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header__navigation_item:not(:last-child){
+  margin-right: 24px;
+}
+
+/* CONTENT */
+
+.content {
+  min-width: 100%;
+  min-height: 2080px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/IMAGE.jpg);
+  padding-top: 238px;
+}
+
+.blog {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-list__item{
+  position: relative;
+}
+
+.blog-list__heading {
+margin: 0;
+max-width: 470px;
+position: absolute;
+top: 220px;
+left: 60px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 35px;
+color: #FFFFFF;
+}
+
+.blog-list__lable {
+position: absolute;
+top: 160px;
+left: 60px;
+display: flex;
+}
+
+.blog-list__bloger-image {
+  display: block;
+  border-radius: 4px;
+  margin-right: 14px;
+}
+
+.blog-list__name {
+margin: 0;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.blog-list__date {
+margin: 0;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.blog-list__image {
+  display: block;
+  width: 800px;
+}
+
+.blog-list__description{
+  padding: 36px 76px 35px 60px;
+  background-color: #fff;
+}
+
+.blog-list__paragraph {
+margin: 0;
+margin-bottom: 5px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #333333;
+}
+
+.blog-list__link{
+text-decoration: none;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 30px;
+color: #8D4FDB;
+}
+
+.blog__archive{
+  background-color: #F1F1F1;
+  padding-top: 49px;
+  padding-bottom: 60px;
+}
+
+.blog__archive-heading{
+margin: 0;
+margin-bottom: 21px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+color: #333333;
+}
+
+.blog__archive-link {
+display: block;
+box-sizing: border-box;
+margin: 0 auto;
+padding-top: 8px;
+padding-bottom: 7px;
+min-height: 45px;
+width: 182px;
+background-color: #8D4FDB;
+border-radius: 3px;
+text-decoration: none;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #FFFFFF;
 }
