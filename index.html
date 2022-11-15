@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -52,7 +52,7 @@
                   <p class="blog-list__date">June 12, 2016</p>
                 </div>
               </div>
-              <img class="blog-list__image" src="./images/blog-image-2.jpg" alt="man staying on the rock" width="800">
+              <img class="blog-list__image" src="./images/blog-image-2.jpg" alt="notebook laying on the map" width="800">
               <div class="blog-list__description">
                 <p class="blog-list__paragraph">Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie. Nullam</p>
                 <a class="blog-list__link" href="#">Continue Reading &rarr;</a>
@@ -67,7 +67,7 @@
                   <p class="blog-list__date">June 12, 2016</p>
                 </div>
               </div>
-              <img class="blog-list__image" src="./images/blog-image-3.jpg" alt="man staying on the rock" width="800">
+              <img class="blog-list__image" src="./images/blog-image-3.jpg" alt="man sitting above the lake" width="800">
               <div class="blog-list__description">
                 <p class="blog-list__paragraph">Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie. Nullam</p>
                 <a class="blog-list__link" href="#">Continue Reading &rarr;</a>
@@ -80,9 +80,56 @@
           </ul>
         </div>
       </section>
+      <section class="stories">
+        <h2 class="stories__title">Featured Stories</h2>
+        <p class="stories__subtitle">Did you read our personal favorites?</p>
+        <ul class="stories__list">
+          <li class="stories__card">
+            <div class="blog-list__lable blog-list__lable_place_stories">
+              <img class="blog-list__bloger-image blog-list__bloger-image_place_stories" src="./images/bloger-man.jpg" alt="picture of bloger" width="35">
+              <div>
+                <p class="blog-list__name blog-list__name_place_stories">Luke Cage</p>
+                <p class="blog-list__date blog-list__date_place_stories">Oct 11, 2016</p>
+              </div>
+            </div>
+            <img class="stories__image" src="./images/stories-pic-1.jpg" alt="#">
+            <h3 class="stories__card-title">The 10 most beautiful places you should visit in your life</h3>
+          </li>
+            <li class="stories__card">
+              <div class="blog-list__lable blog-list__lable_place_stories">
+                <img class="blog-list__bloger-image blog-list__bloger-image_place_stories" src="./images/bloger-woman.jpg" alt="picture of bloger" width="35">
+                <div>
+                  <p class="blog-list__name blog-list__name_place_stories">Jessica Simpson</p>
+                  <p class="blog-list__date blog-list__date_place_stories">June 12, 2016</p>
+                </div>
+              </div>
+              <img class="stories__image" src="./images/stories-pic-2.jpg" alt="#">
+              <h3 class="stories__card-title">We found the most beautiful place for our party november</h3>
+            </li>
+              <li class="stories__card">
+                <div class="blog-list__lable blog-list__lable_place_stories">
+                  <img class="blog-list__bloger-image blog-list__bloger-image_place_stories" src="./images/bloger-man.jpg" alt="picture of bloger" width="35">
+                  <div>
+                    <p class="blog-list__name blog-list__name_place_stories">Luke Cage</p>
+                    <p class="blog-list__date blog-list__date_place_stories">June 12, 2016</p>
+                  </div>
+                </div>
+                <img class="stories__image" src="./images/stories-pic-3.jpg" alt="#">
+                <h3 class="stories__card-title">Why New York is still our favorite city to visit</h3>
+              </li>
+        </ul>
+        <p class="stories__text">Want to read all of our stories? <a class="stories__link" href="#">Read the full blog</a></p>
+      </section>
     </main>
     <footer class="footer">
-
+      <div class="footer__container">
+        <p class="footer__text">Copyright &copy; Explorer</p>
+        <p class="footer__text-accent">- Images used for demonstration purpose only (<a class="stories__link" href="#"> Licenses</a>)</p>
+      </div>
+      <div class="footer__container">
+        <p class="footer__text">Copyright &copy; <a class="stories__link" href="#">Studio Corvus</a></p>
+        <p class="footer__text">Powered by <a class="stories__link" href="#">Webflow</a></p>
+      </div>
     </footer>
 </body>
 </html>

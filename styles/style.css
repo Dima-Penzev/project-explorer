@@ -1,12 +1,8 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1440px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Lato', sans-serif;
+min-width: 1100px;
+max-width: 1440px;
+margin: 0 auto;
+font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 position: relative;
 }
@@ -61,7 +57,7 @@ text-decoration: none;
 display: block;
 box-sizing: border-box;
 padding-bottom: 14px;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 11px;
@@ -236,4 +232,152 @@ text-align: center;
 letter-spacing: 1px;
 text-transform: uppercase;
 color: #FFFFFF;
+}
+
+/* STORIES */
+
+.stories {
+padding-bottom: 90px;
+}
+
+.stories__title {
+margin: 0;
+margin-top: 85px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+color: #333333;
+}
+
+.stories__subtitle {
+  margin: 0;
+  margin-top: 25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 33px;
+  text-align: center;
+  color: #A9AFB3;  
+}
+
+.stories__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+}
+
+.stories__card {
+  position: relative;
+  max-width: 300px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.stories__card:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+
+.blog-list__lable_place_stories {
+  top: 131px;
+  left: 24px;
+}
+
+.blog-list__bloger-image_place_stories {
+  height: 35px;
+  margin-right: 8px;
+}
+
+.blog-list__name_place_stories {
+font-size: 14px;
+}
+
+.blog-list__date_place_stories{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.stories__image {
+  display: block;
+  height: 190px;
+  border-radius: 3px;
+}
+
+.stories__card-title{
+margin: 0;
+margin-top: 23px;
+padding-right: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #000000;
+}
+
+.stories__text {
+margin: 0;
+margin-top: 56px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+text-align: center;
+color: #333333;
+}
+
+.stories__link {
+  text-decoration: none;
+  color: #8D4FDB;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000000;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+
+.footer__container {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer__container:not(:first-child) {
+  margin-top: 10px;
+}
+
+.footer__text {
+margin: 0;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+text-align: center;
+color: #8B8B8B;
+}
+
+.footer__text:first-child {
+  margin-right: 10px;
+}
+
+.footer__text-accent {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  color: #8B8B8B;
 }
