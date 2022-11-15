@@ -5,26 +5,8 @@ margin: 0 auto;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 position: relative;
+background-color: #E5E5E5;
 }
-
-/* .header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  
-}
-
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
 
 /* HEADER */
 
@@ -237,12 +219,13 @@ color: #FFFFFF;
 /* STORIES */
 
 .stories {
+padding-top: 85px;
 padding-bottom: 90px;
+background-color: #fff;
 }
 
 .stories__title {
 margin: 0;
-margin-top: 85px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
